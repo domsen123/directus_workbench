@@ -1,0 +1,23 @@
+{
+  "name": "@vesi.core/zoe-interface",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "Dominic Marx <dominic.marx@axians.de>",
+  "license": "ISC",
+  "directus": true,
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.1",
+    "tsup": "^6.1.3",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.2"
+  },
+  "dependencies": {
+    "@directus/extensions-sdk": "^9.14.4",
+    "vue": "^3.2.37"
+  }
+}

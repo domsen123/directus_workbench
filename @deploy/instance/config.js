@@ -1,0 +1,17 @@
+module.exports = {
+  HOST: '0.0.0.0',
+  PORT: 8055,
+  PUBLIC_URL: `http://localhost:8055`,
+  SERVE_APP: false,
+  LOG_LEVEL: 'info',
+  DB_CLIENT: 'sqlite3',
+  DB_FILENAME: './data.db',
+  STORAGE_LOCAL_ROOT: './uploads',
+  EXTENSIONS_PATH: './extensions',
+  KEY: '539f9dce-6d39-4ff3-b34b-2aeed83a0538',
+  SECRET: 'e0ebc50b1c974f59a41dd669fab29e2b',
+  CORS_ORIGIN: true,
+  ADMIN_EMAIL: 'dominic.marx@vinci-energies.net',
+  EXTENSIONS_AUTO_RELOAD: true,
+  CACHE_ENABLED: false,
+};

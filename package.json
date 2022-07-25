@@ -1,0 +1,31 @@
+{
+  "name": "directus_workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init-workbench": "",
+    "clean": "pnpm -r exec -- rm -rf ./node-modules && rm -rf ./pnpm-lock.yaml",
+    "dev": "$_ run build:watch & $_ run boot",
+    "boot": "$_ run start:server & $_ run start:client",
+    "start:server": "CONFIG_PATH=\"./config.js\" pnpm -r --filter @deploy/instance exec -- npx directus start",
+    "start:client": "cd ./@deploy/directus && pnpm --filter @directus/app dev",
+    "build": "NODE_NO_WARNINGS=1 tsup",
+    "build:watch": "NODE_NO_WARNINGS=1 tsup --watch"
+  },
+  "keywords": [],
+  "author": "Dominic Marx <dominic.marx@axians.de>",
+  "license": "ISC",
+  "devDependencies": {
+    "@antfu/eslint-config-ts": "^0.25.2",
+    "@antfu/eslint-config-vue": "^0.25.2",
+    "@types/node": "^18.6.1",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "fast-glob": "^3.2.11",
+    "prettier": "^2.7.1",
+    "tsup": "^6.1.3",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.3"
+  }
+}

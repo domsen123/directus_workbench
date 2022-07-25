@@ -1,0 +1,10 @@
+cli.js
+dist
+public
+node_modules
+pnpm-lock.yaml
+payload.json
+CHANGELOG.md
+*.sass
+
+**/directus-*/**/extensions/**/*

@@ -1,0 +1,19 @@
+{
+  "name": "@deploy/instance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dominic Marx <dominic.marx@axians.de>",
+  "license": "ISC",
+  "dependencies": {
+    "directus": "file://../directus",
+    "sqlite3": "^5.0.10"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
