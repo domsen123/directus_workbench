@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "init-workbench": "",
+    "init-workbench": "mkdir ./@deploy/directus && cd ./@deploy/directus && git clone git@github.com:directus/directus.git .",
     "clean": "pnpm -r exec -- rm -rf ./node-modules && rm -rf ./pnpm-lock.yaml",
     "dev": "$_ run build:watch & $_ run boot",
     "boot": "$_ run start:server & $_ run start:client",
