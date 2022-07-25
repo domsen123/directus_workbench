@@ -1,4 +1,7 @@
 packages:
-  - '@deploy/*'
+  - '@deploy/directus/api'
+  - '@deploy/directus/app'
+  - '@deploy/directus/packages/*'
+  - '@deploy/instance'
   - '@packages/*'
   - '!@deploy/directus'

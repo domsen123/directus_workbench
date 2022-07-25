@@ -11693,7 +11693,7 @@ __export(hooks_exports, {
 module.exports = __toCommonJS(hooks_exports);
 var import_path = require("path");
 
-// node_modules/.pnpm/@directus+shared@9.14.5/node_modules/@directus/shared/dist/esm/utils/define-extension.js
+// @deploy/directus/packages/shared/dist/esm/utils/define-extension.js
 function defineHook(config) {
   return config;
 }

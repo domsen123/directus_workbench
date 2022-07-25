@@ -9,7 +9,7 @@
     "dev": "$_ run build:watch & $_ run boot",
     "boot": "$_ run start:server & $_ run start:client",
     "start:server": "CONFIG_PATH=\"./config.js\" pnpm -r --filter @deploy/instance exec -- npx directus start",
-    "start:client": "cd ./@deploy/directus && pnpm --filter @directus/app dev",
+    "start:client": "pnpm --filter @directus/app dev",
     "build": "NODE_NO_WARNINGS=1 tsup",
     "build:watch": "NODE_NO_WARNINGS=1 tsup --watch"
   },
